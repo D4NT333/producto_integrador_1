@@ -1,6 +1,7 @@
 package com.example.proyecto_integrador;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -34,6 +35,14 @@ public class MainActivity6 extends AppCompatActivity {
         btn1_5 = findViewById(R.id.btn_regresar_eliminar);
         btn2_5 = findViewById(R.id.btn_eliminar_eliminar);
 
+        //Valores compartidos
+        SharedPreferences sharedPreferences = getSharedPreferences("MisDatos", MODE_PRIVATE);
+        final String[] finalString = {sharedPreferences.getString("final_string", "No hay datos disponibles")};
+
+
+        SharedPreferences sharedPreferences_1 = getSharedPreferences("MisDatos", MODE_PRIVATE);
+        final String[] edtt1_2 = {sharedPreferences_1.getString("nombre", "No hay datos disponibles")};
+
 
         //Configurar botones
 
@@ -47,7 +56,7 @@ public class MainActivity6 extends AppCompatActivity {
 
         //Configurar spinner
         spine1_5 = findViewById(R.id.spnr2_eliminar);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,R.layout.spinner_item,new String[]{"POllo","Soy el uriel","Webos"});
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,R.layout.spinner_item,new String[]{"Elimina", edtt1_2[0]});
         adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         spine1_5.setAdapter(adapter);
         spine1_5.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -62,6 +71,15 @@ public class MainActivity6 extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
                 //nada seleccionado
 
+            }
+        });
+
+
+        btn2_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edtt1_2[0] = "";
+                finalString[0] = "";
             }
         });
 

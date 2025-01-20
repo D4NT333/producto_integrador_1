@@ -75,6 +75,11 @@ public class MainActivity3 extends AppCompatActivity {
                 editor.putString("final_string", final_string);
                 editor.apply();
 
+                SharedPreferences sharedPreferences_1 = getSharedPreferences("MisDatos", MODE_PRIVATE);
+                SharedPreferences.Editor editor_1 = sharedPreferences_1.edit();
+                editor.putString("nombre", edtt1_2);
+                editor.apply();
+
 
 
 

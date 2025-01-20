@@ -1,6 +1,7 @@
 package com.example.proyecto_integrador;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -35,6 +36,15 @@ public class MainActivity5 extends AppCompatActivity {
         btn2_4 = findViewById(R.id.btn_actualizar_actualizar);
 
 
+        //Valores compartidos
+
+        SharedPreferences sharedPreferences = getSharedPreferences("MisDatos", MODE_PRIVATE);
+        String finalString = sharedPreferences.getString("final_string", "No hay datos disponibles");
+
+
+        SharedPreferences sharedPreferences_1 = getSharedPreferences("MisDatos", MODE_PRIVATE);
+        String edtt1_2 = sharedPreferences_1.getString("nombre", "No hay datos disponibles");
+
 
         //Configurar botones
         btn1_4.setOnClickListener(new View.OnClickListener() {
@@ -47,7 +57,7 @@ public class MainActivity5 extends AppCompatActivity {
 
         //Configurar spiners
         spiner1_4 = findViewById(R.id.spnr1_actualizar);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,R.layout.spinner_item,new String[]{"Muestra","Soy el uriel","Webos"});
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,R.layout.spinner_item,new String[]{"Producto",edtt1_2});
         adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         spiner1_4.setAdapter(adapter);
         spiner1_4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -66,7 +76,7 @@ public class MainActivity5 extends AppCompatActivity {
         });
 
         spiner2_4 = findViewById(R.id.spnr2_actualizar);
-        ArrayAdapter<String> adapter_2 = new ArrayAdapter<>(this,R.layout.spinner_item,new String[]{"Hola","Soy el uriel","Webos"});
+        ArrayAdapter<String> adapter_2 = new ArrayAdapter<>(this,R.layout.spinner_item,new String[]{"Campo",finalString});
         adapter_2.setDropDownViewResource(R.layout.spinner_dropdown_item);
         spiner2_4.setAdapter(adapter_2);
         spiner2_4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

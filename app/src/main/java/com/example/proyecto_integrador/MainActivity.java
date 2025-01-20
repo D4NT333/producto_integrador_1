@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         btn2 = findViewById(R.id.btn_salir1);
 
         //Configurar las valoraciones
-        usuario = "";
-        contrasenia = "";
+        usuario = "Dante";
+        contrasenia = "hola";
 
 
         btn1.setOnClickListener(new View.OnClickListener() {
