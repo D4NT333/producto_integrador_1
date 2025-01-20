@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F4E5"
+    tools:context=".MainActivity6">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Eliminar"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="#D7D0D0"
+        />
+    <TextView
+        android:text="Selecciona un producto a eliminar "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="#D7D0D0"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/spnr2_eliminar"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-40dp"
+        android:backgroundTint="@color/black" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop= "-5dp"
+        android:layout_marginStart="21dp"
+        />
+
+    <TextView
+        android:id="@+id/txv5_eliminar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#D7D0D0" />
+
+    <Button
+        android:id="@+id/btn_regresar_eliminar"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Regresar"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="#E41448"
+        />
+    <Button
+        android:id="@+id/btn_eliminar_eliminar"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-49dp"
+        android:text="Actualizar"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_marginStart="220dp"
+        android:backgroundTint="#4BEFA8"
+        />
+
+
+</LinearLayout>

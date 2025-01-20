@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:background="#F8F4E5"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Agregar"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="#D7D0D0"
+        />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="#D7D0D0"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_nombre_agregar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-37dp"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="Nombre"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="21dp"
+        />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="#D7D0D0"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_precio_agregar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginTop="-36dp"
+        android:layout_marginStart="30dp"
+        />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="21dp"
+        />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="#D7D0D0"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_cantidad_agregar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginTop="-36dp"
+        android:layout_marginStart="30dp"
+        />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="21dp"
+        />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="#D7D0D0"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_marca_agregar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Marca"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginTop="-36dp"
+        android:layout_marginStart="30dp"
+        />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="21dp"
+        />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="#D7D0D0"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_proveedor_agregar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-37dp"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="Proveedor"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="21dp"
+        />
+
+    <TextView
+        android:id="@+id/txv_2_agregar"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#D7D0D0"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/btn_regresar_agregar"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Regresar"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="#E41448"
+        />
+    <Button
+        android:id="@+id/btn_agregar_agregar"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-49dp"
+        android:text="Agregar"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_marginStart="220dp"
+        android:backgroundTint="#4BEFA8"
+        />
+
+
+</LinearLayout>

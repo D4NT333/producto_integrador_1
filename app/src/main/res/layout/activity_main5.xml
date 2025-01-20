@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F4E5"
+    tools:context=".MainActivity5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#D7D0D0"
+        android:gravity="center"
+        android:text="Actualizar"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona un producto y el campo a modificar"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="#D7D0D0"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/spnr1_actualizar"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-40dp"
+        android:backgroundTint="@color/black" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="-5dp"
+        android:background="@color/black"
+        />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="#D7D0D0"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/spnr2_actualizar"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-40dp"
+        android:backgroundTint="@color/black" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop= "-5dp"
+        android:layout_marginStart="21dp"
+        />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="#D7D0D0"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_modifica_actualizar"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="Modifica"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginTop="-38dp"
+        android:layout_marginStart="30dp"
+        />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="-7dp"
+        android:layout_marginStart="21dp"
+        />
+
+    <TextView
+        android:id="@+id/txv4_actualizar"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="#D7D0D0"
+        />
+    <Button
+        android:id="@+id/btn_regresar_actualizar"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Regresar"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="#E41448"
+        />
+    <Button
+        android:id="@+id/btn_actualizar_actualizar"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-49dp"
+        android:text="Actualizar"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_marginStart="220dp"
+        android:backgroundTint="#4BEFA8"
+        />
+
+
+
+</LinearLayout>
